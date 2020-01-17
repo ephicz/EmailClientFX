@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E0735;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.reviewsceneController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="164.0" layoutY="307.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#send_email" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #DE311D;" text="Odeslat email" textAlignment="CENTER" textFill="WHITE" />
+      <Label layoutX="574.0" layoutY="14.0" onMouseClicked="#close_client" text="X" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="33.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OmluvTO!">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="78.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Předmět:" />
+      <Text fill="WHITE" layoutX="93.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kopie:" />
+      <Text fill="WHITE" layoutX="88.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Obsah:" />
+      <Text fill="WHITE" layoutX="92.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Komu:" />
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="297.0" layoutY="307.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back_to_main2" prefHeight="26.0" prefWidth="112.0" style="-fx-border-color: #DE311D;" text="Změnit obsah" textAlignment="CENTER" textFill="RED" />
+      <Label fx:id="komuLabel" layoutX="136.0" layoutY="84.0" text="Label" textFill="WHITE" />
+      <Label fx:id="odkohoLabel" layoutX="136.0" layoutY="106.0" text="Label" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="72.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Odesilatel:" />
+      <Label fx:id="kopieLabel" layoutX="136.0" layoutY="125.0" text="Label" textFill="WHITE" />
+      <Label fx:id="predmetLabel" layoutX="136.0" layoutY="151.0" text="Label" textFill="WHITE" />
+      <Label fx:id="obsahLabel" layoutX="136.0" layoutY="179.0" text="Label" textFill="WHITE" />
+      <Label fx:id="completeLabel" layoutX="286.0" layoutY="349.0" textFill="WHITE" />
+   </children>
+</AnchorPane>

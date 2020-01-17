@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2E0735;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.mainsceneController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="242.0" layoutY="307.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switch_to_error" prefHeight="26.0" prefWidth="112.0" style="-fx-background-color: #DE311D;" text="Vytvořit email" textAlignment="CENTER" textFill="WHITE" />
+      <Label layoutX="574.0" layoutY="14.0" onMouseClicked="#close_client" text="X" textFill="WHITE">
+         <font>
+            <Font name="Verdana Bold" size="15.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="33.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OmluvTO!">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="117.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hodiny:" />
+      <Text fill="WHITE" layoutX="179.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.   2.   3.   4.   5.   6.   7.   8.   Celý den" />
+      <Text fill="WHITE" layoutX="71.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Důvod absence:" />
+      <Text fill="WHITE" layoutX="179.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lékař      Rodinné d.      Zaspal      Jiné:" />
+      <Text fill="WHITE" layoutX="120.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poslat:" />
+      <Text fill="WHITE" layoutX="177.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Třídní      Kopie rodiče      Jiné:" />
+      <TextField fx:id="jinePoslatText" layoutX="342.0" layoutY="255.0" promptText="Email" />
+      <TextField fx:id="jineDuvodText" layoutX="387.0" layoutY="197.0" promptText="Důvod" />
+      <Text fill="WHITE" layoutX="137.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kdy:" />
+      <Text fill="WHITE" layoutX="176.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vcera      Dnes      Zitra      Jine:" />
+      <TextField fx:id="jineText" layoutX="345.0" layoutY="88.0" promptText="Datum (např. 5.1)" />
+      <CheckBox fx:id="den2" layoutX="230.0" layoutY="92.0" mnemonicParsing="false" />
+      <CheckBox fx:id="den3" layoutX="276.0" layoutY="92.0" mnemonicParsing="false" />
+      <CheckBox fx:id="odlisne" layoutX="316.0" layoutY="92.0" mnemonicParsing="false" />
+      <CheckBox fx:id="den1" layoutX="183.0" layoutY="92.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod1" layoutX="176.0" layoutY="142.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod2" layoutX="194.0" layoutY="143.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod3" layoutX="213.0" layoutY="142.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod4" layoutX="231.0" layoutY="143.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod5" layoutX="248.0" layoutY="142.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod6" layoutX="266.0" layoutY="143.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod7" layoutX="285.0" layoutY="142.0" mnemonicParsing="false" />
+      <CheckBox fx:id="hod8" layoutX="303.0" layoutY="143.0" mnemonicParsing="false" />
+      <CheckBox fx:id="celyDen" layoutX="346.0" layoutY="143.0" mnemonicParsing="false" />
+      <CheckBox fx:id="lekar" layoutX="186.0" layoutY="201.0" mnemonicParsing="false" />
+      <CheckBox fx:id="rodina" layoutX="243.0" layoutY="201.0" mnemonicParsing="false" />
+      <CheckBox fx:id="zaspal" layoutX="311.0" layoutY="201.0" mnemonicParsing="false" />
+      <CheckBox fx:id="jineDuvod" layoutX="363.0" layoutY="201.0" mnemonicParsing="false" />
+      <CheckBox fx:id="tridni" layoutX="183.0" layoutY="258.0" mnemonicParsing="false" />
+      <CheckBox fx:id="rodice" layoutX="248.0" layoutY="259.0" mnemonicParsing="false" />
+      <CheckBox fx:id="jinePoslat" layoutX="316.0" layoutY="259.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>
